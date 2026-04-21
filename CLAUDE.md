@@ -2,6 +2,13 @@
 
 **Remote Agentic Coding Platform**: Control AI coding assistants (Claude Code SDK, Codex SDK) remotely from Slack, Telegram, and GitHub. Built with **Bun + TypeScript + SQLite/PostgreSQL**, single-developer tool for AI-assisted development practitioners. Architecture prioritizes simplicity, flexibility, and user control.
 
+**In the broader platform stack:** Archon is the workflow harness. It wraps coding
+execution in structured, reproducible YAML-defined DAGs. It does not decide what work
+to do (that is ControlPlane), does not select execution lanes (that is SwitchBoard),
+and does not perform the coding itself (that is kodo or the lane runner). Archon is
+optional — the system functions without it for tasks that don't require multi-step
+workflow discipline.
+
 ## Core Principles
 
 **Single-Developer Tool**
